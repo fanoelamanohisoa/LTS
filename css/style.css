@@ -5,7 +5,8 @@
 body{
 	margin:0;
 	padding:0;
-	overflow-x: hidden;
+	overflow-x:hidden;
+	
 }
 
 *{
@@ -13,6 +14,9 @@ body{
 	margin:0;
 	padding:0;
 	font-family: 'Oswald', sans-serif;
+	color: white;
+	list-style: none;
+	
 }
 
 /*Header*/
@@ -145,11 +149,13 @@ header .ham-burger.active span:nth-child(2){
 .home{
 	height: 100vh;
 	background-image: url('../images/home.png');
+	background-repeat: no-repeat;
 	background-size: cover;
 	padding:15px;
 	-webkit-display: flex;
 	display: flex;
 	position: relative;
+	
 }
 .home .go-down{
   position: absolute;
@@ -185,7 +191,7 @@ header .ham-burger.active span:nth-child(2){
 
 .home h1{
 	color:#ffffff;
-	font-size: 60px;
+	font-size: 50px;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin:0;
@@ -209,7 +215,7 @@ header .ham-burger.active span:nth-child(2){
 }
 .about .content .box{
 	flex:0 0 33.33%;
-	max-width: 33.33%;
+	max-width: 25.33%;
 	padding:15px;
 }
 .about .content .box .inner{
@@ -218,15 +224,18 @@ header .ham-burger.active span:nth-child(2){
 .about .content .box:nth-child(2) .inner{
 	background-color: orange;
 }
+.about .content .box:nth-child(4) .inner {
+	background-color: orange;
+}
 .about .content .box .inner .img img{
 	width: 100%;
 }
 .about .content .box .inner .text{
-	padding:30px;
+	padding:25px;
 }
 
 .about .content .box .inner .text h4{
-  font-size: 20px;
+  font-size: 16px;
   margin:0;
   padding: 0px 0px 15px;
   font-weight: 500;
@@ -234,11 +243,11 @@ header .ham-burger.active span:nth-child(2){
  text-transform: capitalize;
   text-align: center;
 }
-.about .content .box .inner .text p{
-	font-size: 15px;
+.about .content .box .inner .text li{
+	font-size: 14px;
 	line-height:20px;
 	color:#ffffff;
-	text-align: center;
+	text-align: left;
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -456,13 +465,26 @@ header .ham-burger.active span:nth-child(2){
     font-family: 'Open Sans', sans-serif;
 }
 .classes .content .class-items .item .item-text a{
+	color: white;
  font-size: 16px;
- text-decoration: none;
  display: inline-block;
+ padding: 8px 30px;
+	background-color: transparent;
+	text-decoration: none;
+	border: 1px solid transparent;
+	border-color: white;
+	cursor: pointer;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+	margin-top: 10px;
+	text-align: center;
+	
 }
 
-.classes .content .class-items .item .item-text a{
-	color:#ffffff;
+.classes .content .class-items .item .item-text a:hover{
+	border-color: white;
+		color: orange;
+		background-color: white;
 }
 
 
@@ -655,7 +677,7 @@ header .ham-burger.active span:nth-child(2){
 }
 .price-package .content .box{
 	flex:0 0 33.33%;
-	max-width: 33.33%;
+	max-width: 25.33%;
 	padding: 15px;
 }
 .price-package .content .box .inner{
@@ -845,8 +867,16 @@ header .ham-burger.active span:nth-child(2){
 	font-size: 15px;
 }
 
-
-
+.contact .content .text .copy a{
+	color: #c5c5c5;
+	font-size: 15px;
+	text-decoration: none;
+}
+.contact .content .text .copy a:hover {
+	color: white;
+	font-size: 15px;
+	text-decoration:underline;
+}
 
 /*Responsive*/
 
@@ -940,5 +970,8 @@ flex: 0 0 100%;
       font-size: 30px;
   }
 }
+
+
+
 
 
